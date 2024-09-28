@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install required tools
 # Dependencies to execute Android builds
 
-RUN dpkg --add-architecture i386
+#RUN dpkg --add-architecture i386
 #RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
 #  libc6:i386 \
 #  libgcc1:i386 \
@@ -24,8 +24,8 @@ RUN apt-get install -y \
   curl \
   expect \
   git \
-  make \
-  openjdk-17-jdk \
+  #make \
+  openjdk-17-jdk-headless \
   wget \
   unzip \
   vim \
